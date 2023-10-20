@@ -41,6 +41,12 @@ dependencies {
     annotationProcessor("com.google.dagger:dagger-compiler:2.48.1")
 }
 
+tasks {
+    shadowJar {
+        manifest.attributes["Implementation-Version"] = project.version
+    }
+}
+
 allprojects {
     apply {
         plugin("java")
