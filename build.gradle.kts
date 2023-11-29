@@ -31,7 +31,7 @@ dependencies {
     implementation(project(":common", "shadow"))
     implementation(project(":launchermeta", "shadow"))
     implementation("mx.kenzie:mirror:5.0.5")
-    implementation("io.github.lxgaming:reconstruct-common:1.3.24")
+    implementation("io.github.lxgaming:reconstruct-common:1.3.25")
     implementation("org.vineflower:vineflower:1.9.3")
     implementation("net.sf.jopt-simple:jopt-simple:5.0.4")
     implementation("org.slf4j:slf4j-simple:2.0.9")
