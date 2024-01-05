@@ -34,7 +34,7 @@ dependencies {
     implementation("io.github.lxgaming:reconstruct-common:1.3.24")
     implementation("org.vineflower:vineflower:1.9.3")
     implementation("net.sf.jopt-simple:jopt-simple:5.0.4")
-    implementation("org.slf4j:slf4j-simple:2.0.9")
+    implementation("org.slf4j:slf4j-simple:2.0.10")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
     implementation("com.google.dagger:dagger:2.48.1")
