@@ -1,12 +1,16 @@
 package com.shanebeestudios.mcdeop;
 
 import com.shanebeestudios.mcdeop.util.Util;
+import io.sentry.Sentry;
 import javax.swing.*;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class McDeob {
     public static void main(final String[] args) {
+        Sentry.init(options ->
+                options.setDsn("https://a431c07b469cad98e4933270c602fb0d@o165625.ingest.sentry.io/4506099651444736"));
+
         if (args.length == 0) {
             startGUI();
         } else {
