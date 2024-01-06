@@ -14,15 +14,15 @@ public record ResourceRequest(ReleaseManifest manifest, SourceType type) {
     public Optional<URL> getJar() {
         return Optional.ofNullable(
                 switch (this.type) {
-                    case SERVER -> this.manifest.getDownloads().getServer().getUrl();
-                    case CLIENT -> this.manifest.getDownloads().getClient().getUrl();
+                    case SERVER -> this.manifest.getDownloads().server().url();
+                    case CLIENT -> this.manifest.getDownloads().client().url();
                 });
     }
 
     public Optional<URL> getMappings() {
         return switch (this.type) {
-            case SERVER -> this.manifest.getDownloads().getServerMappings().map(DownloadInfo::getUrl);
-            case CLIENT -> this.manifest.getDownloads().getClientMappings().map(DownloadInfo::getUrl);
+            case SERVER -> this.manifest.getDownloads().getServerMappings().map(DownloadInfo::url);
+            case CLIENT -> this.manifest.getDownloads().getClientMappings().map(DownloadInfo::url);
         };
     }
 }

@@ -79,7 +79,7 @@ public class Processor {
         final String versionFolder = String.format(
                 "%s-%s",
                 this.request.type().name().toLowerCase(Locale.ENGLISH),
-                this.request.getVersion().getId());
+                this.request.getVersion().id());
         final Path folderPath = Util.getBaseDataFolder().resolve(versionFolder);
 
         try {
@@ -128,10 +128,10 @@ public class Processor {
             log.error(
                     "Failed to find JAR URL for version {}-{}",
                     this.request.type(),
-                    this.request.getVersion().getId());
+                    this.request.getVersion().id());
             this.sendNewResponse(String.format(
                     "Failed to find JAR URL for version %s-%s",
-                    this.request.type(), this.request.getVersion().getId()));
+                    this.request.type(), this.request.getVersion().id()));
             return false;
         }
 
@@ -139,10 +139,10 @@ public class Processor {
             log.error(
                     "Failed to find mappings URL for version {}-{}",
                     this.request.type(),
-                    this.request.getVersion().getId());
+                    this.request.getVersion().id());
             this.sendNewResponse(String.format(
                     "Failed to find mappings URL for version %s-%s",
-                    this.request.type(), this.request.getVersion().getId()));
+                    this.request.type(), this.request.getVersion().id()));
             return false;
         }
 
@@ -206,7 +206,7 @@ public class Processor {
 
             this.decompiler.decompile(jarPath, this.decompiledJarPath);
 
-            if (this.options.isZipDecompileOutput()) {
+            if (this.options.zipDecompileOutput()) {
                 // Pack the decompiled files into a zip file
                 log.info("Packing decompiled files into {}", this.decompiledZipPath);
                 this.sendNewResponse("Packing decompiled files ...");
@@ -229,12 +229,12 @@ public class Processor {
             this.sendNewResponse("Downloading JAR & MAPPINGS...");
             CompletableFuture.allOf(this.downloadJar(), this.downloadMappings()).join();
 
-            if (this.options.isRemap()) {
+            if (this.options.remap()) {
                 this.remapJar();
             }
 
-            if (this.options.isDecompile()) {
-                this.decompileJar(this.options.isRemap() ? this.remappedJar : this.jarPath);
+            if (this.options.decompile()) {
+                this.decompileJar(this.options.remap() ? this.remappedJar : this.jarPath);
             }
 
         } catch (final IOException e) {

@@ -52,7 +52,7 @@ public class CommandLineHandler {
         if (this.options.has("versions")) {
             System.out.println("Available Minecraft versions to deobfuscate:");
             for (final Version version : this.versionManager.getVersions()) {
-                System.out.println(" - " + version.getId());
+                System.out.println(" - " + version.id());
             }
             return false;
         }

@@ -9,6 +9,8 @@ import de.timmi6790.launchermeta.data.version.Version;
 import de.timmi6790.launchermeta.data.version.VersionManifest;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import javax.inject.Inject;
 import okhttp3.*;
@@ -27,8 +29,8 @@ public class LauncherMeta {
     @Inject
     public LauncherMeta(final OkHttpClient httpClient) {
         try {
-            this.versionManifestUrl = new URL(VERSION_MANIFEST_URL);
-        } catch (final MalformedURLException e) {
+            this.versionManifestUrl = new URI(VERSION_MANIFEST_URL).toURL();
+        } catch (final MalformedURLException | URISyntaxException e) {
             throw new IllegalStateException("Failed to parse version manifest url", e);
         }
 
@@ -54,7 +56,7 @@ public class LauncherMeta {
     }
 
     public ReleaseManifest getReleaseManifest(final Version version) throws IOException {
-        final ReleaseManifest releaseManifest = this.get(version.getUrl(), ReleaseManifest.class);
+        final ReleaseManifest releaseManifest = this.get(version.url(), ReleaseManifest.class);
         releaseManifest.setVersion(version);
         return releaseManifest;
     }

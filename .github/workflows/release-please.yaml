@@ -23,11 +23,11 @@ jobs:
                 # a new release is created:
                 if: ${{ steps.release.outputs.release_created }}
             # Build jar
-            -   name: Set up JDK 17
+            -   name: Set up JDK 21
                 if: ${{ steps.release.outputs.release_created }}
                 uses: actions/setup-java@v4
                 with:
-                    java-version: '17'
+                    java-version: '21'
                     distribution: 'temurin'
                     cache: gradle
             -   name: Run chmod to make gradlew executable
