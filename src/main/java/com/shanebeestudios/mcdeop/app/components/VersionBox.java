@@ -28,7 +28,7 @@ public class VersionBox extends JComboBox<Version> {
             final JLabel label =
                     (JLabel) super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
             final Version version = (Version) value;
-            label.setText(version.getId());
+            label.setText(version.id());
             return label;
         }
     }

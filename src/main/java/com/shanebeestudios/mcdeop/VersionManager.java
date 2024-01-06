@@ -29,13 +29,13 @@ public class VersionManager {
     }
 
     private boolean hasMappings(final Version version) {
-        return version.getReleaseTime().isAfter(MINIMUM_RELEASE_TIME) || SPECIAL_VERSIONS.contains(version.getId());
+        return version.releaseTime().isAfter(MINIMUM_RELEASE_TIME) || SPECIAL_VERSIONS.contains(version.id());
     }
 
     private List<Version> fetchVersions() {
         final List<Version> fetchedVersions;
         try {
-            fetchedVersions = this.launcherMeta.getVersionManifest().getVersions();
+            fetchedVersions = this.launcherMeta.getVersionManifest().versions();
         } catch (final IOException e) {
             log.error("Failed to fetch version manifest", e);
             return List.of();
@@ -45,13 +45,13 @@ public class VersionManager {
         fetchedVersions.removeIf(version -> !this.hasMappings(version));
 
         // Sort versions after time
-        fetchedVersions.sort((o1, o2) -> o2.getReleaseTime().compareTo(o1.getReleaseTime()));
+        fetchedVersions.sort((o1, o2) -> o2.releaseTime().compareTo(o1.releaseTime()));
 
         return fetchedVersions;
     }
 
     public Optional<Version> getVersion(final String id) {
-        return this.getVersion(version -> version.getId().equals(id));
+        return this.getVersion(version -> version.id().equals(id));
     }
 
     public Optional<Version> getVersion(final Predicate<Version> predicate) {

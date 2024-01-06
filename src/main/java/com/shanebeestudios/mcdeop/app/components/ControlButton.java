@@ -17,11 +17,11 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+@Setter
 @Getter
 public class ControlButton extends JButton {
     private static final String DEFAULT_TEXT = "Start!";
 
-    @Setter
     private boolean ready = true;
 
     public ControlButton(final App app, final VersionManager versionManager) {

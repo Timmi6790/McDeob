@@ -13,7 +13,7 @@ remapped/decompiled Minecraft code.
 
 ## Requirements
 
-- Java 17+
+- Java 21+
 
 ## Fork Notice
 
@@ -53,19 +53,14 @@ That said, you may **NOT** upload the resulting files to something like GitHub.
 
 ![](https://i.imgur.com/aXFtkaI.png)
 
-## Compiling
-
-If you wish to compile this yourself, simply clone the repo and run `mvn clean package`.   
-Super Simple!!!
-
 ## Tools
 
 This application uses 2 different tools for the processing of the jar files
 
 1) [**Reconstruct by LXGaming**](https://github.com/LXGaming/Reconstruct) = This tool remaps the Minecraft jar using
-Minecraft's mappings.
+   Minecraft's mappings.
 2) [**Vineflower**](https://github.com/Vineflower/vineflower) = This tool is used to decompile the jar file (class
-files) into usable .java files.
+   files) into usable .java files.
 
 ## License
 
