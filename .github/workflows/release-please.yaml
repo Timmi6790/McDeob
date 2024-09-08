@@ -35,7 +35,7 @@ jobs:
                 run: chmod +x ./gradlew
             -   name: Build with Gradle
                 if: ${{ steps.release.outputs.release_created }}
-                uses: gradle/gradle-build-action@3a75647ad43c07f41c11f6410321aae5a9f930c5
+                uses: gradle/gradle-build-action@093dfe9d598ec5a42246855d09b49dc76803c005
                 with:
                     arguments: build
             -   name: Upload Release Artifact
