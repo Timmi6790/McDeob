@@ -1,5 +1,35 @@
 # Changelog
 
+## [2.7.0](https://github.com/Timmi6790/McDeob/compare/2.6.0...v2.7.0) (2024-09-08)
+
+
+### Features
+
+* add dagger dpi ([8c612c2](https://github.com/Timmi6790/McDeob/commit/8c612c29db8a9cd715f0506cd7127296fce82006))
+* add sentry integration ([#53](https://github.com/Timmi6790/McDeob/issues/53)) ([b7b5c8f](https://github.com/Timmi6790/McDeob/commit/b7b5c8f46e7cb555177ba12f8bf1c53a147dabc7))
+* upgrade to java 21 ([#55](https://github.com/Timmi6790/McDeob/issues/55)) ([45a0515](https://github.com/Timmi6790/McDeob/commit/45a0515fc4c129a4a853caac8eb2176c51590998))
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.fasterxml.jackson.core:jackson-databind to v2.15.3 ([850c41a](https://github.com/Timmi6790/McDeob/commit/850c41ab1f64e03cc65759cdb090ae488deb9ba0))
+* **deps:** update dependency com.fasterxml.jackson.core:jackson-databind to v2.16.1 ([f7c213a](https://github.com/Timmi6790/McDeob/commit/f7c213a160448ff2cd8f655ee8c20fe94023b4d4))
+* **deps:** update dependency com.fasterxml.jackson.core:jackson-databind to v2.17.2 ([#71](https://github.com/Timmi6790/McDeob/issues/71)) ([68edf66](https://github.com/Timmi6790/McDeob/commit/68edf669abd1aa4b0ad8c1b117f71aa782ffe489))
+* **deps:** update dependency com.fasterxml.jackson.datatype:jackson-datatype-jsr310 to v2.15.3 ([f507ba1](https://github.com/Timmi6790/McDeob/commit/f507ba1e1a65d1f560ab2aa88a2cde8894b14df9))
+* **deps:** update dependency com.fasterxml.jackson.datatype:jackson-datatype-jsr310 to v2.16.1 ([966a280](https://github.com/Timmi6790/McDeob/commit/966a28057ee86fbdbb196de28166ff13dc7f511d))
+* **deps:** update dependency com.fasterxml.jackson.datatype:jackson-datatype-jsr310 to v2.17.2 ([#67](https://github.com/Timmi6790/McDeob/issues/67)) ([c9427d3](https://github.com/Timmi6790/McDeob/commit/c9427d3e5f9f9915d4b9565243fc9cff8ac1ffbc))
+* **deps:** update dependency com.google.dagger:dagger to v2.50 ([c5e8e85](https://github.com/Timmi6790/McDeob/commit/c5e8e85861e696674e66e8652390e655ab7cddec))
+* **deps:** update dependency com.google.dagger:dagger to v2.52 ([#65](https://github.com/Timmi6790/McDeob/issues/65)) ([288ece5](https://github.com/Timmi6790/McDeob/commit/288ece5e20289cd20bcb6cf59020c8f5b40cdb14))
+* **deps:** update dependency com.google.dagger:dagger-compiler to v2.50 ([9fc579d](https://github.com/Timmi6790/McDeob/commit/9fc579daf9fe522a4d3484f7a88d3fb69df65773))
+* **deps:** update dependency com.google.dagger:dagger-compiler to v2.52 ([#64](https://github.com/Timmi6790/McDeob/issues/64)) ([8173ae1](https://github.com/Timmi6790/McDeob/commit/8173ae13fbec060b60b3c1d3d0b3a3bae1352d67))
+* **deps:** update dependency com.squareup.okhttp3:okhttp to v4.12.0 ([29b3dbb](https://github.com/Timmi6790/McDeob/commit/29b3dbb06e1c831d54e70689566b4740803c1a02))
+* **deps:** update dependency io.github.lxgaming:reconstruct-common to v1.3.25 ([fde0171](https://github.com/Timmi6790/McDeob/commit/fde0171c31aee2d1516cd05ef761eaac55f8cee1))
+* **deps:** update dependency io.github.lxgaming:reconstruct-common to v1.3.26 ([#69](https://github.com/Timmi6790/McDeob/issues/69)) ([b9eae51](https://github.com/Timmi6790/McDeob/commit/b9eae514a3c6fccb350406460f626110a8324753))
+* **deps:** update dependency org.slf4j:slf4j-simple to v2.0.10 ([6ebd5a3](https://github.com/Timmi6790/McDeob/commit/6ebd5a395439a2de377d01752da20fc57b9f5f27))
+* **deps:** update dependency org.slf4j:slf4j-simple to v2.0.16 ([#60](https://github.com/Timmi6790/McDeob/issues/60)) ([6147e49](https://github.com/Timmi6790/McDeob/commit/6147e49fcd5588d11fce9749edd09ebb9a0493cc))
+* **deps:** update dependency org.vineflower:vineflower to v1.10.1 ([#68](https://github.com/Timmi6790/McDeob/issues/68)) ([7e5f8ca](https://github.com/Timmi6790/McDeob/commit/7e5f8ca2e9b500db0171a976d1a9100f3abec2ea))
+* missing version information ([636d8eb](https://github.com/Timmi6790/McDeob/commit/636d8eb593b012a026becd903bfa15a8ad8793fc))
+
 ## [2.6.0](https://github.com/Timmi6790/McDeob/compare/v2.5.0...2.6.0) (2023-10-12)
 
 
