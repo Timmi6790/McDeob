@@ -4,6 +4,6 @@ dependencies {
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.16.1")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
-    implementation("com.google.dagger:dagger:2.50")
+    implementation("com.google.dagger:dagger:2.52")
     annotationProcessor("com.google.dagger:dagger-compiler:2.52")
 }
