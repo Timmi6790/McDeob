@@ -36,7 +36,7 @@ dependencies {
     implementation("org.vineflower:vineflower:1.11.1")
     implementation("net.sf.jopt-simple:jopt-simple:5.0.4")
     implementation("org.slf4j:slf4j-simple:2.0.17")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:okhttp:5.1.0")
 
     implementation("com.google.dagger:dagger:2.52")
     annotationProcessor("com.google.dagger:dagger-compiler:2.52")
