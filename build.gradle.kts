@@ -31,15 +31,15 @@ repositories {
 dependencies {
     implementation(project(":common", "shadow"))
     implementation(project(":launchermeta", "shadow"))
-    implementation("mx.kenzie:mirror:5.0.5")
-    implementation("io.github.lxgaming:reconstruct-common:1.3.27")
-    implementation("org.vineflower:vineflower:1.11.1")
-    implementation("net.sf.jopt-simple:jopt-simple:5.0.4")
-    implementation("org.slf4j:slf4j-simple:2.0.17")
-    implementation("com.squareup.okhttp3:okhttp:5.1.0")
+    implementation(libs.mirror)
+    implementation(libs.reconstruct.common)
+    implementation(libs.vineflower)
+    implementation(libs.jopt.simple)
+    implementation(libs.slf4j.simple)
+    implementation(libs.okhttp)
 
-    implementation("com.google.dagger:dagger:2.57.1")
-    annotationProcessor("com.google.dagger:dagger-compiler:2.57.1")
+    implementation(libs.dagger)
+    annotationProcessor(libs.dagger.compiler)
 }
 
 tasks {
