@@ -12,13 +12,9 @@ jobs:
     release-please:
         runs-on: ubuntu-latest
         steps:
-            -   uses: google-github-actions/release-please-action@v4
+            -   uses: googleapis/release-please-action@v4
                 id: release
-                with:
-                    release-type: simple
-                    extra-files: build.gradle.kts
-                    include-v-in-tag: false
-            -   uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
+            -   uses: actions/checkout@v5
                 # these if statements ensure that a publication only occurs when
                 # a new release is created:
                 if: ${{ steps.release.outputs.release_created }}
@@ -27,17 +23,21 @@ jobs:
                 if: ${{ steps.release.outputs.release_created }}
                 uses: actions/setup-java@v5
                 with:
-                    java-version: '21'
-                    distribution: 'temurin'
-                    cache: gradle
+                    java-version: "21"
+                    distribution: "temurin"
+
+            -   name: Setup Gradle
+                if: ${{ steps.release.outputs.release_created }}
+                uses: gradle/actions/setup-gradle@v4
+
             -   name: Run chmod to make gradlew executable
                 if: ${{ steps.release.outputs.release_created }}
                 run: chmod +x ./gradlew
+
             -   name: Build with Gradle
                 if: ${{ steps.release.outputs.release_created }}
-                uses: gradle/gradle-build-action@093dfe9d598ec5a42246855d09b49dc76803c005
-                with:
-                    arguments: build
+                run: ./gradlew build
+
             -   name: Upload Release Artifact
                 if: ${{ steps.release.outputs.release_created }}
                 env:
