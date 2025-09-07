@@ -6,7 +6,7 @@ plugins {
     application
     id("io.freefair.lombok") version "8.14.2"
     id("com.diffplug.spotless") version "7.2.1"
-    id("com.github.johnrengelman.shadow") version "8.1.1"
+    id("com.gradleup.shadow") version "9.1.0"
     id("io.sentry.jvm.gradle") version "5.9.0"
 }
 
@@ -53,7 +53,7 @@ allprojects {
         plugin("java")
         plugin("com.diffplug.spotless")
         plugin("io.freefair.lombok")
-        plugin("com.github.johnrengelman.shadow")
+        plugin("com.gradleup.shadow")
     }
 
     java.sourceCompatibility = JavaVersion.VERSION_21
