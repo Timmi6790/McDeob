@@ -12,8 +12,10 @@ plugins {
 
 group = "com.shanebeestudios"
 // x-release-please-start-version
-version = "2.7.0"
+val version = "2.7.0"
 // x-release-please-end
+
+project.version = version
 description = "McDeob"
 
 application {
