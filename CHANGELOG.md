@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.7.1](https://github.com/Timmi6790/McDeob/compare/v2.7.0...v2.7.1) (2025-09-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.fasterxml.jackson.core:jackson-databind to v2.20.0 ([#73](https://github.com/Timmi6790/McDeob/issues/73)) ([8779861](https://github.com/Timmi6790/McDeob/commit/87798619f7014f7a949bedb3c52680dbe9dc2ba7))
+* **deps:** update dependency com.fasterxml.jackson.datatype:jackson-datatype-jsr310 to v2.20.0 ([#92](https://github.com/Timmi6790/McDeob/issues/92)) ([91b5072](https://github.com/Timmi6790/McDeob/commit/91b5072ff05899927be79406658ce8169c6043e8))
+* **deps:** update dependency com.google.dagger:dagger to v2.57.1 ([#81](https://github.com/Timmi6790/McDeob/issues/81)) ([3d51a1b](https://github.com/Timmi6790/McDeob/commit/3d51a1b7169986573326d00b0a405d9b2446080f))
+* **deps:** update dependency com.google.dagger:dagger-compiler to v2.57.1 ([#82](https://github.com/Timmi6790/McDeob/issues/82)) ([80c8049](https://github.com/Timmi6790/McDeob/commit/80c8049d0bb02aeef425905abef47c56cd9cab44))
+* **deps:** update dependency com.squareup.okhttp3:okhttp to v5 ([#87](https://github.com/Timmi6790/McDeob/issues/87)) ([a4370af](https://github.com/Timmi6790/McDeob/commit/a4370af2206779e87c93450cabe68dcedf764107))
+* **deps:** update dependency io.github.lxgaming:reconstruct-common to v1.3.27 ([#80](https://github.com/Timmi6790/McDeob/issues/80)) ([f8e5da6](https://github.com/Timmi6790/McDeob/commit/f8e5da6d0af7998f4c5b76526159939d892d8a75))
+* **deps:** update dependency org.slf4j:slf4j-simple to v2.0.17 ([#86](https://github.com/Timmi6790/McDeob/issues/86)) ([6f23f72](https://github.com/Timmi6790/McDeob/commit/6f23f720afeb408c712d62ad317613c41d414a8d))
+* **deps:** update dependency org.vineflower:vineflower to v1.11.1 ([#85](https://github.com/Timmi6790/McDeob/issues/85)) ([40dd667](https://github.com/Timmi6790/McDeob/commit/40dd66766ec6b09f9c333f9ae2cc3e4d2bf8caf4))
+
 ## [2.7.0](https://github.com/Timmi6790/McDeob/compare/2.6.0...v2.7.0) (2024-09-08)
 
 
