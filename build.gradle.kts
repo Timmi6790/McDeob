@@ -11,11 +11,7 @@ plugins {
 }
 
 group = "com.shanebeestudios"
-// x-release-please-start-version
-val version = "2.7.0"
-// x-release-please-end
-
-project.version = version
+project.version = file("version.txt").readText().trim().replace("\n", "")
 description = "McDeob"
 
 application {
